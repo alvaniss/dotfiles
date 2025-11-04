@@ -7,7 +7,7 @@
   border: none;
   border-radius: 0;
   min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
+  font-family: "Stack Sans Text", "Ubuntu";
   font-weight: normal;
   font-size: 12px;
 }
@@ -46,7 +46,7 @@
 }
 
 #custom-separator {
-  font-size: 8px;
+  font-size: 12px;
 }
 
 #custom-files,
