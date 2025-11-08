@@ -45,17 +45,12 @@
   margin-left: 0px;
 }
 
-#custom-separator {
-  font-size: 12px;
-}
-
 #custom-files,
 #custom-helium,
 #custom-keepassxc,
 #custom-vscode,
 #custom-ghostty,
-#custom-obsidian,
-#custom-steam {
+#custom-obsidian {
   margin-left: 4px;
   margin-right: 4px;
 }

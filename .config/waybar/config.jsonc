@@ -5,7 +5,7 @@
   "spacing": 10,
   "height": 28,
   "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces"],
-  "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/vscode", "custom/ghostty", "custom/obsidian", "custom/steam", "custom/separator", "wlr/taskbar", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/vscode", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "tray",
     "pulseaudio",
@@ -54,9 +54,6 @@
     "signal": 7,
     "interval": 3600
   },
-  "custom/separator": {
-    "format": "|"
-  },
   "custom/files": {
     "format": "Files",
     "tooltip": false,
@@ -86,11 +83,6 @@
     "format": "Obsidian",
     "tooltip": false,
     "on-click": "obsidian"
-  },
-  "custom/steam": {
-    "format": "Steam",
-    "tooltip": false,
-    "on-click": "steam"
   },
   
 
@@ -162,12 +154,5 @@
   "tray": {
     "icon-size": 12,
     "spacing": 18
-  },
-  "wlr/taskbar": {
-    "format": "{icon}",
-    "icon-size": 14,
-    "tooltip": false,
-    "on-click": "activate",
-    "on-click-middle": "close"
   }
 }
