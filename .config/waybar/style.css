@@ -37,12 +37,7 @@
 #custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-update {
-  min-width: 12px;
-  margin: 0 7.5px;
-}
-
-#cpu {
-  margin-left: 0px;
+  min-width: 18px;
 }
 
 #custom-files,
@@ -55,21 +50,24 @@
   margin-right: 4px;
 }
 
-tooltip {
-  padding: 2px;
-}
-
 #custom-update {
   font-size: 10px;
+}
+
+#custom-omarchy {
+  margin-right: 3px;
 }
 
 .hidden {
   opacity: 0;
 }
 
+#tray {
+  margin-right: 2px;
+}
+
 #custom-screenrecording-indicator {
   min-width: 12px;
-  margin-left: 8.75px;
   font-size: 10px;
 }
 

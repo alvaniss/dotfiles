@@ -11,6 +11,7 @@
     "pulseaudio",
     "cpu",
     "battery",
+    "hyprland/language",
     "clock"
   ],
   "hyprland/workspaces": {
@@ -27,7 +28,7 @@
       "7": "7",
       "8": "8",
       "9": "9",
-      "active": "󱓻"
+      "active": ""
     },
     "persistent-workspaces": {
       "1": [],
@@ -41,7 +42,7 @@
     "format": "{title}"
   },
   "custom/omarchy": {
-    "format": "<span font='omarchy'>\ue900</span>",
+    "format": "󱓻",
     "on-click": "omarchy-menu",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
@@ -85,7 +86,11 @@
     "on-click": "obsidian"
   },
   
-
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "US",
+    "format-ru": "RU"
+  },
   "cpu": {
     "interval": 10,
     "format": "󰍛",
@@ -146,7 +151,7 @@
     }
   },
   "custom/screenrecording-indicator": {
-    "on-click": "omarchy-cmd-screenrecord",
+    "on-click": "$HOME/.config/hypr/record_stop.sh",
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
