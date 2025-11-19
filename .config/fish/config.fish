@@ -4,3 +4,4 @@ end
 
 set fish_greeting ""
 pyenv init - fish | source
+export PATH="/usr/bin:/bin:$PATH"
