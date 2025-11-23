@@ -1,0 +1,121 @@
+@import "colors.css";
+
+* {
+  color: @secondary;
+  border: none;
+  min-height: 0;
+  font-family: "Stack Sans Text";
+  font-weight: normal;
+  font-size: 12px;
+}
+
+window#waybar {
+  background: @background;
+  color: @secondary
+}
+
+.modules-left {
+  margin-left: 8px;
+}
+
+.modules-right {
+  margin-right: 16px;
+}
+
+#workspaces button {
+  all: initial;
+  padding: 0 6px;
+  margin: 0 1.5px;
+  min-width: 9px;
+}
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 18px;
+}
+
+#custom-files,
+#custom-helium,
+#custom-keepassxc,
+#custom-vscode,
+#custom-ghostty,
+#custom-obsidian {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#custom-omarchy {
+  margin-right: 3px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#tray {
+  margin-right: 2px;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  font-size: 10px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+tooltip * {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+tooltip {
+  background-color: @background;
+  border-radius: 8px;
+  border: 1px solid @inactive;
+}
+
+tooltip label {
+  color: @secondary;
+}
+
+#tray menu,
+#tray menu *,
+#tray .menu,
+#tray .menu * {
+    background-color: rgba(26, 26, 26, 0);
+    color: @secondary;
+}
+
+#tray menu menuitem {
+  border-left: 1px solid @secondary;
+  border-right: 1px solid @secondary;
+}
+
+#tray menu,
+#tray .menu {
+  background-color: @background;
+  border: 1px solid @secondary;
+  border-radius: 8px;
+}
+
+#tray menu menuitem,
+#tray .menu menuitem {
+  padding: 6px 12px;
+}
+
+#tray menu menuitem:hover {
+  background-color: @surface_bright;
+}

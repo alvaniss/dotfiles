@@ -1,0 +1,164 @@
+{
+  "reload_style_on_change": true,
+  "layer": "top",
+  "position": "top",
+  "spacing": 10,
+  "height": 28,
+  "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces"],
+  "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/vscode", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "cpu",
+    "battery",
+    "hyprland/language",
+    "clock"
+  ],
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "default": "",
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9",
+      "10": "0",
+      "active": ""
+    },
+    "persistent-workspaces": {
+      "1": [],
+      "2": [],
+      "3": [],
+      "4": [],
+      "5": []
+    }
+  },
+  "hyprland/window": {
+    "format": "{title}"
+  },
+  "custom/omarchy": {
+    "format": "󱓻",
+    "on-click": "omarchy-menu",
+    "on-click-right": "xdg-terminal-exec",
+    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
+  },
+  "custom/update": {
+    "format": "",
+    "exec": "omarchy-update-available",
+    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
+    "tooltip-format": "Omarchy update available",
+    "signal": 7,
+    "interval": 3600
+  },
+  "custom/files": {
+    "format": "Files",
+    "tooltip": false,
+    "on-click": "nautilus"
+  },
+  "custom/helium": {
+    "format": "Helium",
+    "tooltip": false,
+    "on-click": "helium-browser"
+  },
+  "custom/keepassxc": {
+    "format": "KeePassXC",
+    "tooltip": false,
+    "on-click": "keepassxc"
+  },
+  "custom/vscode": {
+    "format": "VSCode",
+    "tooltip": false,
+    "on-click": "code"
+  },
+  "custom/ghostty": {
+    "format": "Ghostty",
+    "tooltip": false,
+    "on-click": "ghostty"
+  },
+  "custom/obsidian": {
+    "format": "Obsidian",
+    "tooltip": false,
+    "on-click": "obsidian"
+  },
+  
+  "hyprland/language": {
+    "format": "{}",
+    "format-en": "US",
+    "format-ru": "RU"
+  },
+  "cpu": {
+    "interval": 10,
+    "format": "󰍛",
+    "on-click": "omarchy-launch-or-focus-tui btop"
+  },
+  "clock": {
+    "format": "{:L%a   %I:%M %p}",
+    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "calendar": {
+      "mode": "year",
+      "mode-mon-col": 3,
+      "weeks-pos": "right",
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ffffff'><b>{}</b></span>",
+        "weeks": "<span color='#adcdff'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span bgcolor='red'><b>{}</b></span>"
+      }
+    },
+    "actions": {
+    "on-scroll-up": "tz_up",
+    "on-scroll-down": "tz_down",
+    "on-scroll-up": "shift_up",
+    "on-scroll-down": "shift_down"
+    },
+    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-discharging": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "",
+    "format-icons": {
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+    "format-full": "󰂅",
+    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
+    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
+    "interval": 5,
+    "on-click": "omarchy-menu power",
+    "states": {
+      "warning": 20,
+      "critical": 10
+    }
+  },
+  "pulseaudio": {
+    "format": "{icon}",
+    "on-click": "omarchy-launch-or-focus-tui wiremix",
+    "on-click-right": "pamixer -t",
+    "tooltip-format": "Playing at {volume}%",
+    "scroll-step": 5,
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", ""]
+    }
+  },
+  "custom/screenrecording-indicator": {
+    "on-click": "$HOME/.config/hypr/record_stop.sh",
+    "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
+    "signal": 8,
+    "return-type": "json"
+  },
+  "tray": {
+    "icon-size": 12,
+    "spacing": 18
+  }
+}

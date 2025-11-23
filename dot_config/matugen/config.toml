@@ -1,0 +1,55 @@
+[config.wallpaper]
+command = "awww"
+arguments = ["img", "--transition-type", "center"]
+set = true
+
+[templates.waybar]
+input_path = './templates/colors.css'
+output_path = '~/.config/waybar/colors.css'
+post_hook = 'pkill waybar && waybar & disown'
+
+[templates.chromium]
+input_path = '~/.config/matugen/templates/chromium-colors.json'
+output_path = '/etc/chromium/policies/managed/policy.json'
+
+[templates.hyprland]
+input_path = './templates/hyprland-colors.conf'
+output_path = '~/.config/hypr/colors.conf'
+post_hook = 'hyprctl reload'
+
+[templates.zed]
+input_path = './templates/zed-colors.json'
+output_path = '~/.config/zed/themes/matugen.json'
+
+[templates.ghostty]
+input_path = './templates/ghostty-colors'
+output_path = '~/.config/ghostty/themes/matugen'
+
+[templates.fish]
+input_path = './templates/fish-colors.theme'
+output_path = '~/.config/fish/themes/matugen.theme'
+
+[templates.btop]
+input_path = './templates/btop-colors.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+
+[templates.neovim]
+input_path = './templates/nvim-colors.lua'
+output_path = '~/.config/nvim/matugen.lua'
+
+[templates.rofi]
+input_path = './templates/rofi-colors.rasi'
+output_path = '~/.config/rofi/rofi-colors.rasi'
+
+[templates.gtk3]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/gtk.css'
+
+[templates.gtk4]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/gtk.css'
+
+[templates.mako]
+input_path = './templates/mako-colors'
+output_path = '~/.config/mako/mako-colors'
+post_hook = 'makoctl reload'

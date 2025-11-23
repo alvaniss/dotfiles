@@ -1,0 +1,102 @@
+// omarchy + https://github.com/NischalDawadi/Hyprlust/blob/master/.config/fastfetch/config.jsonc
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "padding": {
+      "top": 2,
+      "right": 6,
+      "left": 2
+    }
+  },
+  "display": {
+      "separator": " ",
+      "color": {
+        "keys": "#c7c7c7"
+      }
+  },
+  "modules": [
+    "break",
+    "break",
+    "break",
+    "break",
+    {
+        "key": "╭───────────╮",
+        "type": "custom",
+        "keyColor": "#c7c7c7"
+    },
+    {
+        "key": "│ {#31}󰍛 cpu     {#keys}│",
+        "type": "cpu",
+        "showPeCoreCount": true
+    },
+    {
+        "type": "gpu",
+        "key": "│ {#32} gpu     {#keys}│",
+        "detectionMethod": "pci"
+    },
+    {
+        "key": "│ {#33}󰉉 disk    {#keys}│",
+        "type": "disk",
+        "folders": "/"
+    },
+    {
+        "key": "│ {#34} memory  {#keys}│",
+        "type": "memory"
+    },
+    {
+        "key": "├───────────┤",
+        "type": "custom",
+        "keyColor": "#c7c7c7"
+    },
+    {
+        "type": "command",
+        "key": "│ {#35} os      {#keys}│",
+        "text": "version=$(omarchy-version); echo \"Omarchy $version\""
+    },
+    {
+        "type": "wm",
+        "key": "│ {#36} wm      {#keys}│"
+    },
+    {
+        "key": "│ {#32} term    {#keys}│",
+        "type": "terminal"
+    },
+    {
+        "key": "│ {#31} shell   {#keys}│",
+        "type": "shell"
+    },
+    {
+        "key": "├───────────┤",
+        "type": "custom",
+        "keyColor": "#c7c7c7"
+    },
+    {
+        "type": "command",
+        "key": "│ {#34}󱦟 os age  {#keys}│",
+        "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days"
+    },
+    {
+        "key": "│ {#36}󰅐 uptime  {#keys}│",
+        "type": "uptime"
+    },
+    {
+        "key": "├───────────┤",
+        "type": "custom",
+        "keyColor": "#c7c7c7"
+    },
+    {
+        "key": "│ {#39} colors  {#keys}│",
+        "type": "colors",
+        "symbol": "circle"
+    },
+    {
+        "key": "╰───────────╯",
+        "type": "custom",
+        "keyColor": "#c7c7c7"
+    },
+    "break",
+    "break",
+    "break",
+    "break"
+]
+}

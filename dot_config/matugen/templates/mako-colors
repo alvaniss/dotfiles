@@ -1,0 +1,6 @@
+background-color={{colors.background.default.hex}}
+text-color={{colors.secondary.default.hex}}
+border-color={{colors.outline_variant.default.hex}}
+
+[urgency=high]
+border-color={{colors.error_container.default.hex}}
