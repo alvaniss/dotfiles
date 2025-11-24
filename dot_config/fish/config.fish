@@ -6,4 +6,4 @@ set fish_greeting ""
 pyenv init - fish | source
 export PATH="/usr/bin:/bin:$PATH"
 
-fish_config theme choose "matugen"
+fish_config theme choose matugen

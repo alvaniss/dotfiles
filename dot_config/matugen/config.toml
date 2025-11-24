@@ -1,6 +1,5 @@
 [config.wallpaper]
-command = "awww"
-arguments = ["img", "--transition-type", "center"]
+command = ""
 set = true
 
 [templates.waybar]
@@ -24,6 +23,7 @@ output_path = '~/.config/zed/themes/matugen.json'
 [templates.ghostty]
 input_path = './templates/ghostty-colors'
 output_path = '~/.config/ghostty/themes/matugen'
+post_hook = 'pkill -SIGUSR2 ghostty'
 
 [templates.fish]
 input_path = './templates/fish-colors.theme'
@@ -32,10 +32,12 @@ output_path = '~/.config/fish/themes/matugen.theme'
 [templates.btop]
 input_path = './templates/btop-colors.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = 'pkill -SIGUSR2 btop'
 
 [templates.neovim]
 input_path = './templates/nvim-colors.lua'
 output_path = '~/.config/nvim/matugen.lua'
+post_hook = 'pkill -SIGUSR1 nvim'
 
 [templates.rofi]
 input_path = './templates/rofi-colors.rasi'
@@ -44,6 +46,7 @@ output_path = '~/.config/rofi/rofi-colors.rasi'
 [templates.gtk3]
 input_path = './templates/gtk-colors.css'
 output_path = '~/.config/gtk-3.0/gtk.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
 
 [templates.gtk4]
 input_path = './templates/gtk-colors.css'
@@ -53,3 +56,12 @@ output_path = '~/.config/gtk-4.0/gtk.css'
 input_path = './templates/mako-colors'
 output_path = '~/.config/mako/mako-colors'
 post_hook = 'makoctl reload'
+
+[templates.vicinae]
+input_path = './templates/vicinae-colors.toml'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
+post_hook = 'vicinae theme set matugen'
+
+[templates.walker]
+input_path = './templates/walker-colors.css'
+output_path = '~/.config/walker/themes/matugen/walker-colors.css'

@@ -122,8 +122,8 @@ wall_selection=$(find "${wall_dir}" -type f \( -iname "*.jpg" -o -iname "*.jpeg"
 
 # SWWW Config
 FPS=60
-TYPE="any"
-DURATION=2
+TYPE="random"
+DURATION=3
 BEZIER=".43,1.19,1,.4"
 AWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration $DURATION"
 
@@ -131,8 +131,7 @@ AWWW_PARAMS="--transition-fps $FPS --transition-type $TYPE --transition-duration
 awww query || awww-daemon --format xrgb
 
 # Set wallpaper
-[[ -n "$wall_selection" ]] && awww img -o "$focused_monitor" "${wall_dir}/${wall_selection}" $AWWW_PARAMS;
-
+[[ -n "$wall_selection" ]] && awww img "${wall_dir}/${wall_selection}" $AWWW_PARAMS;
 
 # Run matugen script
 sleep 0.5
@@ -174,4 +173,8 @@ ln -sf "$wallpaper_path" "$HOME/.config/hypr/images/desktop-background.png"
 
 # send notification after completion
 wait $!
-notify-send -e -h string:x-canonical-private-synchronous:matugen_notif "MatugenMagick" "Matugen & ImageMagick has completed its job" -i $HOME/.local/share/bg
+
+# send notification only if new wallpaper
+if [[ -n "$wall_selection" ]]; then
+    notify-send -e -h string:x-canonical-private-synchronous:matugen_notif "MatugenMagick" "Matugen & ImageMagick has completed its job" -i $HOME/.local/share/bg
+fi

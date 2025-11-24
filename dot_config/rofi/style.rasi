@@ -39,9 +39,9 @@ window {
     enabled:                     true;
     margin:                      0px;
     padding:                     0px;
-    border:                      0px solid;
+    border:                      2px solid;
     border-radius:               12px;
-    border-color:                @selected;
+    border-color:                @outline-variant;
     background-color:            @background;
     cursor:                      "default";
 }
@@ -95,7 +95,7 @@ entry {
 }
 
 // Mode switcher //
-mode-switcher{
+mode-switcher {
     enabled:                     true;
     width:                       7em;
     spacing:                     2em;
@@ -106,6 +106,8 @@ mode-switcher{
 button {
     padding:                     1em;
     cursor:                      pointer;
+    border:                      2px solid;
+    border-color: @outline-variant;
     border-radius:               100%;
     background-color:            @background-alpha;
     text-color:                  @foreground;
