@@ -5,7 +5,7 @@
   "spacing": 10,
   "height": 28,
   "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces"],
-  "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/vscode", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/zed", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "tray",
     "pulseaudio",
@@ -44,7 +44,7 @@
   },
   "custom/omarchy": {
     "format": "󱓻",
-    "on-click": "omarchy-menu",
+    "on-click": "~/.config/hypr/scripts/omarchy_menu",
     "on-click-right": "xdg-terminal-exec",
     "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
   },
@@ -71,10 +71,10 @@
     "tooltip": false,
     "on-click": "keepassxc"
   },
-  "custom/vscode": {
-    "format": "VSCode",
+  "custom/zed": {
+    "format": "Zed",
     "tooltip": false,
-    "on-click": "code"
+    "on-click": "zeditor"
   },
   "custom/ghostty": {
     "format": "Ghostty",
@@ -86,7 +86,7 @@
     "tooltip": false,
     "on-click": "obsidian"
   },
-  
+
   "hyprland/language": {
     "format": "{}",
     "format-en": "US",

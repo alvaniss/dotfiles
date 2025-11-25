@@ -169,7 +169,8 @@ wait $!
 ln -sf "$wallpaper_path" "$HOME/.local/share/bg"
 
 # copy the wallpaper for hyprlock
-ln -sf "$wallpaper_path" "$HOME/.config/hypr/images/desktop-background.png"
+ln -sf "$wallpaper_path" "$HOME/.config/hypr/images/$wall_selection"
+mv "$HOME/.config/hypr/images/$wall_selection" "$HOME/.config/hypr/images/desktop-background.png"
 
 # send notification after completion
 wait $!
