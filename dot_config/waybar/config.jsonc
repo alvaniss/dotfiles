@@ -4,7 +4,7 @@
   "position": "top",
   "spacing": 10,
   "height": 28,
-  "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces"],
+  "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces", "custom/music"],
   "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/zed", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "tray",
@@ -40,7 +40,8 @@
     }
   },
   "hyprland/window": {
-    "format": "{title}"
+    "format": "{title}",
+    "separate-outputs": true
   },
   "custom/omarchy": {
     "format": "󱓻",
@@ -85,6 +86,14 @@
     "format": "Obsidian",
     "tooltip": false,
     "on-click": "obsidian"
+  },
+  "custom/music": {
+    "exec": "$HOME/.config/hypr/scripts/song_detail.sh",
+    "format": "{}",
+    "return-type": "text",
+    "interval": 1,
+    "on-click": "playerctl play-pause",
+    "tooltip": false
   },
 
   "hyprland/language": {
