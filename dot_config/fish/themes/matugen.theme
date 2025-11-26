@@ -1,29 +1,29 @@
-fish_color_autosuggestion 8c9198
+fish_color_autosuggestion 8e9099
 fish_color_cancel -r
-fish_color_command 99ccfa
-fish_color_comment 8c9198
-fish_color_cwd 8c9198
+fish_color_command a9c7ff
+fish_color_comment 8e9099
+fish_color_cwd 8e9099
 fish_color_cwd_root red
-fish_color_end d1bfe7
+fish_color_end dcbce1
 fish_color_error ffb4ab
-fish_color_escape 8c9198
+fish_color_escape 8e9099
 fish_color_history_current --bold
 fish_color_host normal
 fish_color_host_remote yellow
-fish_color_keyword 99ccfa
-fish_color_match d1bfe7
+fish_color_keyword a9c7ff
+fish_color_match dcbce1
 fish_color_normal normal
-fish_color_operator d1bfe7
-fish_color_option 2c638b
-fish_color_param 2c638b
-fish_color_quote b8c8da
-fish_color_redirection 2c638b
+fish_color_operator dcbce1
+fish_color_option 405f90
+fish_color_param 405f90
+fish_color_quote bec7dc
+fish_color_redirection 405f90
 
 
 fish_color_search_match 'bryellow'  '--background=brblack'
 fish_color_selection 'white'  '--bold'  '--background=brblack'
 fish_color_status red
-fish_color_user 99ccfa
+fish_color_user a9c7ff
 fish_color_valid_path --underline
 
 

@@ -16,16 +16,26 @@ window#waybar {
 
 window#waybar > box {
     margin-top: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
-.modules-left, .modules-right {
-  margin-left: 4px;
-  margin-right: 4px;
+.modules-center * {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
-.modules-left, .modules-right, .modules-center {
-    padding: 8px;
+#custom-omarchy,
+#window,
+#workspaces,
+#custom-music,
+.modules-center,
+#tray,
+#info,
+#clock {
+    margin: 0;
     background-color: @background;
+    padding: 8px;
     padding-left: 12px;
     padding-right: 12px;
     border-radius: 10px;
@@ -33,69 +43,54 @@ window#waybar > box {
 }
 
 #workspaces button {
-  all: initial;
   padding: 0 6px;
-  margin: 0 1.5px;
-  min-width: 9px;
+  margin: 0 2px;
+  min-width: 12px;
 }
 
-#workspaces button.empty {
-  opacity: 0.5;
-}
-
-#cpu,
 #battery,
 #pulseaudio,
-#custom-omarchy,
 #custom-screenrecording-indicator,
 #custom-update {
-  min-width: 18px;
-}
-
-#custom-files,
-#custom-helium,
-#custom-keepassxc,
-#custom-vscode,
-#custom-ghostty,
-#custom-obsidian {
-  margin-left: 4px;
-  margin-right: 4px;
-}
-
-#custom-update {
-  font-size: 10px;
+  min-width: 16px;
 }
 
 #custom-omarchy {
-  margin-right: 3px;
+    padding-right: 14px;
+}
+
+#pulseaudio {
+    min-width: 24px;
+    margin-left: -6px;
+    padding-right: 5px;
+}
+
+#cpu {
+    min-width: 24px;
+    margin-right: -2px;
+}
+
+#language {
+    padding-left: 12px;
+    margin-right: 2px;
 }
 
 .hidden {
   opacity: 0;
 }
 
-#tray {
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
 #custom-screenrecording-indicator {
   min-width: 12px;
-  font-size: 10px;
 }
 
 #custom-screenrecording-indicator.active {
   color: #a55555;
 }
 
-tooltip * {
-  background-color: rgba(0, 0, 0, 0);
-}
-
 tooltip {
   background-color: @background;
   border-radius: 8px;
-  border: 1px solid @inactive;
+  border: 1px solid @outline;
 }
 
 tooltip label {
