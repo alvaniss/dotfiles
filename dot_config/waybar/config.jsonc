@@ -152,9 +152,10 @@
   "pulseaudio": {
     "format": "{icon}",
     "on-click": "omarchy-launch-or-focus-tui wiremix",
-    "on-click-right": "pamixer -t",
+    "on-scroll-up": "swayosd-client --output-volume=raise",
+    "on-scroll-down": "swayosd-client --output-volume=lower",
+    "on-click-right": "swayosd-client --output-volume=mute-toggle",
     "tooltip-format": "Playing at {volume}%",
-    "scroll-step": 5,
     "format-muted": "",
     "format-icons": {
       "default": ["", "", ""]

@@ -3,7 +3,8 @@
     "considerPreedit": false,
     "faviconService": "twenty",
     "font": {
-        "size": 10.5
+        "normal": "Stack Sans Text",
+        "size": 10
     },
     "keybinding": "default",
     "keybinds": {

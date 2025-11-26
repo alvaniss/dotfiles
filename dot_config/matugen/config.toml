@@ -69,3 +69,8 @@ output_path = '~/.config/walker/themes/matugen/walker-colors.css'
 [templates.superfile]
 input_path = './templates/superfile-colors.toml'
 output_path = '~/.config/superfile/theme/matugen.toml'
+
+[templates.swayosd]
+input_path = './templates/swayosd-colors.css'
+output_path = '~/.config/swayosd/colors.css'
+post_hook = 'pkill swayosd-server && swayosd-server & disown'
