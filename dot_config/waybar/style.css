@@ -75,6 +75,10 @@ window#waybar > box {
     margin-right: 2px;
 }
 
+#tray {
+    padding-right: 15px;
+}
+
 .hidden {
   opacity: 0;
 }
