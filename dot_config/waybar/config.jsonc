@@ -8,6 +8,7 @@
   "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/zed", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
     "tray",
+    "custom/weather",
     "group/info",
     "clock"
   ],
@@ -89,10 +90,14 @@
     "format": "{}",
     "return-type": "text",
     "interval": 1,
-    "on-click": "playerctl play-pause",
+    "on-click": "playerctl --player=firefox play-pause",
     "tooltip": false
   },
-
+  "custom/weather": {
+    "exec": "$HOME/.config/hypr/scripts/full-weather.py",
+    "return-type": "json",
+    "interval": 3600
+  },
   "hyprland/language": {
     "format": "{}",
     "format-en": "US",

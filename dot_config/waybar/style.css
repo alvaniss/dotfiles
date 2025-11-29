@@ -16,8 +16,8 @@ window#waybar {
 
 window#waybar > box {
     margin-top: 4px;
-    padding-left: 6px;
-    padding-right: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .modules-center * {
@@ -31,6 +31,7 @@ window#waybar > box {
 #custom-music,
 .modules-center,
 #tray,
+#custom-weather,
 #info,
 #clock {
     margin: 0;
