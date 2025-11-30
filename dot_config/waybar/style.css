@@ -20,18 +20,32 @@ window#waybar > box {
     padding-right: 8px;
 }
 
-.modules-center * {
-    padding-left: 5px;
-    padding-right: 5px;
+#custom-files {
+    padding-right: 8px;
+}
+
+#custom-obsidian {
+    padding-left: 8px;
+}
+
+#custom-helium,
+#custom-keepassxc,
+#custom-zed,
+#custom-ghostty {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 #custom-omarchy,
 #window,
 #workspaces,
 #custom-music,
-.modules-center,
 #tray,
 #custom-weather,
+#custom-update,
+#custom-screenrecording-indicator,
+#custom-privacydots,
+#launcher,
 #info,
 #clock {
     margin: 0;
@@ -41,6 +55,12 @@ window#waybar > box {
     padding-right: 12px;
     border-radius: 10px;
     border: 2px solid @outline_variant;
+}
+
+#custom-privacydots {
+  padding: 0 10px;
+  font-size: 12px;
+  letter-spacing: 3px;
 }
 
 #workspaces button {
@@ -74,6 +94,11 @@ window#waybar > box {
 #language {
     padding-left: 12px;
     margin-right: 2px;
+}
+
+#custom-screenrecording-indicator {
+    padding-left: 11px;
+    padding-right: 12px;
 }
 
 #tray {

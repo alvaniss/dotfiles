@@ -5,7 +5,7 @@
   "spacing": 10,
   "height": 28,
   "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces", "custom/music"],
-  "modules-center": ["custom/files", "custom/helium", "custom/keepassxc", "custom/zed", "custom/ghostty", "custom/obsidian", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["group/launcher", "custom/update", "custom/screenrecording-indicator", "custom/privacydots"],
   "modules-right": [
     "tray",
     "custom/weather",
@@ -94,9 +94,18 @@
     "tooltip": false
   },
   "custom/weather": {
-    "exec": "$HOME/.config/hypr/scripts/full-weather.py",
+    "exec": "/usr/bin/python3 $HOME/.config/hypr/scripts/full-weather.py",
     "return-type": "json",
     "interval": 3600
+  },
+  "custom/privacydots": {
+      "exec": "$HOME/.config/hypr/scripts/privacy_dots.sh",
+      "return-type": "json",
+      "interval": 3,
+      "format": "{text}",
+      "tooltip": true,
+      "escape": false,
+      "markup": "pango"
   },
   "hyprland/language": {
     "format": "{}",
@@ -181,5 +190,16 @@
         "battery",
     		"hyprland/language"
    	]
-  }
+  },
+  "group/launcher": {
+    "orientation": "inherit",
+   	"modules": [
+  		"custom/files",
+      "custom/helium",
+      "custom/keepassxc",
+      "custom/zed",
+      "custom/ghostty",
+      "custom/obsidian"
+ 	]
+}
 }
