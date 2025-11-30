@@ -9,7 +9,6 @@
   "modules-right": [
     "custom/privacydots",
     "tray",
-    "custom/weather",
     "group/info",
     "clock"
   ],
@@ -93,11 +92,6 @@
     "interval": 1,
     "on-click": "playerctl --player=firefox play-pause",
     "tooltip": false
-  },
-  "custom/weather": {
-    "exec": "/usr/bin/python3 $HOME/.config/hypr/scripts/full-weather.py",
-    "return-type": "json",
-    "interval": 3600
   },
   "custom/privacydots": {
       "exec": "$HOME/.config/hypr/scripts/privacy_dots.sh",
