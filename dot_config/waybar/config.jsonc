@@ -5,8 +5,9 @@
   "spacing": 10,
   "height": 28,
   "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces", "custom/music"],
-  "modules-center": ["group/launcher", "custom/update", "custom/screenrecording-indicator", "custom/privacydots"],
+  "modules-center": ["group/launcher", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
+    "custom/privacydots",
     "tray",
     "custom/weather",
     "group/info",

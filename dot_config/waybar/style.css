@@ -47,6 +47,7 @@ window#waybar > box {
 #custom-privacydots,
 #launcher,
 #info,
+#privacy,
 #clock {
     margin: 0;
     background-color: @background;
