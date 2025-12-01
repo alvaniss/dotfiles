@@ -44,7 +44,7 @@ window#waybar > box {
 #custom-weather,
 #custom-update,
 #custom-screenrecording-indicator,
-#custom-privacydots,
+#custom-privacy-dots,
 #launcher,
 #info,
 #privacy,
@@ -58,7 +58,7 @@ window#waybar > box {
     border: 2px solid @outline_variant;
 }
 
-#custom-privacydots {
+#custom-privacy-dots {
   padding: 0 10px;
   font-size: 12px;
   letter-spacing: 3px;

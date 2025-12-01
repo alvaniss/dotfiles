@@ -7,7 +7,7 @@
   "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces", "custom/music"],
   "modules-center": ["group/launcher", "custom/update", "custom/screenrecording-indicator"],
   "modules-right": [
-    "custom/privacydots",
+    "custom/privacy-dots",
     "tray",
     "group/info",
     "clock"
@@ -93,8 +93,8 @@
     "on-click": "playerctl --player=firefox play-pause",
     "tooltip": false
   },
-  "custom/privacydots": {
-      "exec": "$HOME/.config/hypr/scripts/privacy_dots.sh",
+  "custom/privacy-dots": {
+      "exec": "privacy-dots",
       "return-type": "json",
       "interval": 3,
       "format": "{text}",
