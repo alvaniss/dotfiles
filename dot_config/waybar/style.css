@@ -70,6 +70,11 @@ window#waybar > box {
   min-width: 12px;
 }
 
+#custom-update {
+    padding-left: 8px;
+    padding-right: 10px;
+}
+
 #battery,
 #pulseaudio,
 #custom-screenrecording-indicator,
