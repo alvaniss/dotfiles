@@ -1,0 +1,10 @@
+{ "workbench.colorTheme": "Matte Black",     
+  "update.mode": "none",
+  "workbench.activityBar.location": "bottom",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "workbench.settings.showAISearchToggle": false,
+  "chat.disableAIFeatures": true,
+  "liveServer.settings.donotShowInfoMsg": true
+}
