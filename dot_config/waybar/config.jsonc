@@ -5,7 +5,7 @@
   "spacing": 10,
   "height": 28,
   "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces", "custom/music"],
-  "modules-center": ["group/launcher", "custom/update", "custom/screenrecording-indicator"],
+  "modules-center": ["group/launcher", "custom/update", "custom/voxtype", "custom/screenrecording-indicator"],
   "modules-right": [
     "custom/privacy-dots",
     "tray",
@@ -157,13 +157,14 @@
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "omarchy-launch-or-focus-tui wiremix",
+    "on-click": "omarchy-launch-audio",
     "on-scroll-up": "swayosd-client --output-volume=raise",
     "on-scroll-down": "swayosd-client --output-volume=lower",
     "on-click-right": "swayosd-client --output-volume=mute-toggle",
     "tooltip-format": "Playing at {volume}%",
     "format-muted": "",
     "format-icons": {
+      "headphone": "",
       "default": ["", "",  ""]
     }
   },
@@ -172,6 +173,19 @@
     "exec": "$OMARCHY_PATH/default/waybar/indicators/screen-recording.sh",
     "signal": 8,
     "return-type": "json"
+  },
+  "custom/voxtype": {
+    "exec": "omarchy-voxtype-status",
+    "return-type": "json",
+    "format": "{icon}",
+    "format-icons": {
+      "idle": "",
+      "recording": "󰍬",
+      "transcribing": "󰔟"
+    },
+    "tooltip": true,
+    "on-click-right": "omarchy-voxtype-config",
+    "on-click": "omarchy-voxtype-model"
   },
   "tray": {
     "icon-size": 12,
