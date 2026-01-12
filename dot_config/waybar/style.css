@@ -21,19 +21,20 @@ window#waybar > box {
 }
 
 #custom-files {
-    padding-right: 8px;
+    padding-right: 6px;
 }
 
-#custom-obsidian {
-    padding-left: 8px;
+#custom-spotify {
+    padding-left: 6px;
 }
 
 #custom-helium,
 #custom-keepassxc,
 #custom-zed,
-#custom-ghostty {
-    padding-left: 8px;
-    padding-right: 8px;
+#custom-ghostty,
+#custom-obsidian {
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 #custom-omarchy,

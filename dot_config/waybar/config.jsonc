@@ -85,12 +85,17 @@
     "tooltip": false,
     "on-click": "obsidian"
   },
+  "custom/spotify": {
+    "format": "Spotify",
+    "tooltip": false,
+    "on-click": "spotify"
+  },
   "custom/music": {
     "exec": "$HOME/.config/hypr/scripts/song_detail.sh",
     "format": "{}",
     "return-type": "text",
     "interval": 1,
-    "on-click": "playerctl --player=firefox play-pause",
+    "on-click": "playerctl --player=spotify play-pause",
     "tooltip": false
   },
   "custom/privacy-dots": {
@@ -208,7 +213,8 @@
       "custom/keepassxc",
       "custom/zed",
       "custom/ghostty",
-      "custom/obsidian"
+      "custom/obsidian",
+      "custom/spotify"
  	]
 }
 }
