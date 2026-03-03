@@ -4,11 +4,11 @@
   "position": "top",
   "spacing": 10,
   "height": 28,
-  "output": "DP-2",
-  "modules-left": ["custom/omarchy", "hyprland/window", "hyprland/workspaces", "custom/music"],
-  "modules-center": ["group/launcher", "custom/update", "custom/voxtype", "custom/screenrecording-indicator"],
+  "modules-left": ["hyprland/window", "hyprland/workspaces", "custom/music"],
+  "modules-center": [],
   "modules-right": [
     "custom/privacy-dots",
+    "custom/recording-output",
     "tray",
     "group/info",
     "clock"
@@ -17,7 +17,7 @@
     "on-click": "activate",
     "format": "{icon}",
     "format-icons": {
-      "default": "x",
+      "default": "",
       "1": "1",
       "2": "2",
       "3": "3",
@@ -28,7 +28,7 @@
       "8": "8",
       "9": "9",
       "10": "0",
-      "active": "x"
+      "active": ""
     },
     "persistent-workspaces": {
       "1": [],
@@ -42,60 +42,11 @@
     "format": "{title}",
     "max-length": 48
   },
-  "custom/omarchy": {
-    "format": "PWR",
-    "on-click": "~/.config/hypr/scripts/omarchy_menu",
-    "on-click-right": "xdg-terminal-exec",
-    "tooltip-format": "Omarchy Menu\n\nSuper + Alt + Space"
-  },
-  "custom/update": {
-    "format": "UPDATE!!!",
-    "exec": "omarchy-update-available",
-    "on-click": "omarchy-launch-floating-terminal-with-presentation omarchy-update",
-    "tooltip-format": "Omarchy update available",
-    "signal": 7,
-    "interval": 7200
-  },
-  "custom/files": {
-    "format": "FILES",
-    "tooltip": false,
-    "on-click": "nautilus"
-  },
-  "custom/helium": {
-    "format": "HELIUM",
-    "tooltip": false,
-    "on-click": "helium-browser"
-  },
-  "custom/keepassxc": {
-    "format": "KEEPASSXC",
-    "tooltip": false,
-    "on-click": "keepassxc"
-  },
-  "custom/zed": {
-    "format": "ZED",
-    "tooltip": false,
-    "on-click": "zeditor"
-  },
-  "custom/ghostty": {
-    "format": "GHOSTTY",
-    "tooltip": false,
-    "on-click": "ghostty"
-  },
-  "custom/obsidian": {
-    "format": "OBSIDIAN",
-    "tooltip": false,
-    "on-click": "obsidian"
-  },
-  "custom/spotify": {
-    "format": "SPOTIFY",
-    "tooltip": false,
-    "on-click": "spotify"
-  },
   "custom/music": {
     "exec": "$HOME/.config/hypr/scripts/song_detail.sh",
     "format": "{}",
     "return-type": "text",
-    "interval": 1,
+    "interval": 5,
     "on-click": "playerctl --player=spotify play-pause",
     "tooltip": false
   },
@@ -115,12 +66,12 @@
   },
   "cpu": {
     "interval": 10,
-    "format": "CPU",
-    "on-click": "omarchy-launch-or-focus-tui btop"
+    "format": "󰍛",
+    "on-click": "kitty btop"
   },
   "clock": {
-    "format": "{:L%a %I:%M %p}",
-    "tooltip-format": "<tt><small>{calendar}</small></tt>",
+    "format": "{:L%a   %I:%M %p}",
+    "tooltip-format": "<tt>{calendar}</tt>",
     "calendar": {
       "mode": "year",
       "mode-mon-col": 3,
@@ -139,58 +90,26 @@
     "on-scroll-down": "tz_down",
     "on-scroll-up": "shift_up",
     "on-scroll-down": "shift_down"
-    },
-    "on-click-right": "omarchy-launch-floating-terminal-with-presentation omarchy-tz-select"
-  },
-  "battery": {
-    "format": "{capacity}% {icon}",
-    "format-discharging": "{icon}",
-    "format-charging": "{icon}",
-    "format-plugged": "",
-    "format-icons": {
-      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
-      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-    },
-    "format-full": "󰂅",
-    "tooltip-format-discharging": "{power:>1.0f}W↓ {capacity}%",
-    "tooltip-format-charging": "{power:>1.0f}W↑ {capacity}%",
-    "interval": 5,
-    "on-click": "omarchy-menu power",
-    "states": {
-      "warning": 20,
-      "critical": 10
     }
   },
   "pulseaudio": {
     "format": "{icon}",
-    "on-click": "omarchy-launch-audio",
+    "on-click": "kitty wiremix",
     "on-scroll-up": "swayosd-client --output-volume=raise",
     "on-scroll-down": "swayosd-client --output-volume=lower",
     "on-click-right": "swayosd-client --output-volume=mute-toggle",
     "tooltip-format": "Playing at {volume}%",
-    "format-muted": "OFF",
+    "format-muted": "",
     "format-icons": {
-      "default": ["LOW", "MID",  "HIGH"]
+      "headphone": "",
+      "default": ["", "",  ""]
     }
   },
-  "custom/screenrecording-indicator": {
-    "on-click": "$HOME/.config/hypr/scripts/record_stop.sh",
-    "exec": "$HOME/.config/hypr/scripts/screen-recording.sh",
+  "custom/recording-output": {
+    "on-click": "$HOME/.config/hypr/scripts/recording-stop.sh",
+    "exec": "$HOME/.config/hypr/scripts/recording-output.sh",
     "signal": 8,
     "return-type": "json"
-  },
-  "custom/voxtype": {
-    "exec": "omarchy-voxtype-status",
-    "return-type": "json",
-    "format": "{icon}",
-    "format-icons": {
-      "idle": "",
-      "recording": "󰍬",
-      "transcribing": "󰔟"
-    },
-    "tooltip": true,
-    "on-click-right": "omarchy-voxtype-config",
-    "on-click": "omarchy-voxtype-model"
   },
   "tray": {
     "icon-size": 12,
@@ -204,17 +123,5 @@
         "battery",
     		"hyprland/language"
    	]
-  },
-  "group/launcher": {
-    "orientation": "inherit",
-   	"modules": [
-  		"custom/files",
-      "custom/helium",
-      "custom/keepassxc",
-      "custom/zed",
-      "custom/ghostty",
-      "custom/obsidian",
-      "custom/spotify"
- 	]
-}
+  }
 }

@@ -13,7 +13,7 @@ output_path = '/etc/chromium/policies/managed/policy.json'
 
 [templates.hyprland]
 input_path = './templates/hyprland-colors.conf'
-output_path = '~/.config/hypr/colors.conf'
+output_path = '~/.config/hypr/configs/colors.conf'
 post_hook = 'hyprctl reload'
 
 [templates.zed]
@@ -51,11 +51,6 @@ post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings s
 [templates.gtk4]
 input_path = './templates/gtk-colors.css'
 output_path = '~/.config/gtk-4.0/gtk.css'
-
-[templates.mako]
-input_path = './templates/mako-colors'
-output_path = '~/.config/mako/mako-colors'
-post_hook = 'makoctl reload'
 
 [templates.vicinae]
 input_path = './templates/vicinae-colors.toml'

@@ -1,0 +1,26 @@
+@import "./colors.css";
+
+window {
+  border: 2px solid @border;
+  background-color: @background;
+  border-radius: 12px;
+}
+
+label {
+  font-family: 'Stack Sans Text';
+  font-size: 11pt;
+  color: @foreground;
+}
+
+image {
+  color: @base;
+}
+
+progressbar {
+  border-radius: 12px;
+}
+
+progress {
+    min-width: 0;
+  background-color: @text;
+}
