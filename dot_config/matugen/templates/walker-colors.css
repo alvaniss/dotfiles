@@ -1,0 +1,7 @@
+@define-color selected {{colors.primary_fixed.default.hex}};
+@define-color selected-text {{colors.surface.default.hex}};
+@define-color text {{colors.primary.default.hex}};
+@define-color base {{colors.secondary.default.hex}};
+@define-color border {{colors.outline_variant.default.hex}};
+@define-color foreground {{colors.on_background.default.hex}};
+@define-color background {{colors.background.default.hex}};

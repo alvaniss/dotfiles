@@ -1,0 +1,24 @@
+{
+   "$schema": "https://vicinae.com/schemas/config.json",
+   "theme": {
+      "dark": {
+         "name": "matugen"
+      }
+   },
+   "favorites": [
+      "power:sleep",
+      "power:suspend",
+      "power:reboot",
+      "power:power-off"
+   ],
+   "providers": {
+      "clipboard": {
+         "preferences": {
+            "encryption": false,
+            "eraseOnStartup": true,
+            "ignorePasswords": true,
+            "monitoring": true
+         }
+      }
+   }
+}
