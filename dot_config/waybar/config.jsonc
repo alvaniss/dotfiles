@@ -43,7 +43,7 @@
     "max-length": 48
   },
   "custom/music": {
-    "exec": "$HOME/.config/hypr/scripts/song_detail.sh",
+    "exec": "$HOME/.config/hypr/scripts/song-details.sh",
     "format": "{}",
     "return-type": "text",
     "interval": 5,
