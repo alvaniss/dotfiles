@@ -14,6 +14,7 @@ chezmoi
 dropbox
 dunst
 dxvk-bin
+evince
 fcitx5
 ffmpeg4.4
 ffmpegthumbnailer
@@ -24,10 +25,12 @@ gamemode
 gamescope
 galculator
 gdu
+grim
 ghostty
 github-cli
 gnome-desktop-4
 gnome-desktop-common
+gnome-disk-utility
 gnome-epub-thumbnailer
 gnome-keyring
 gnome-themes-extra
@@ -97,9 +100,12 @@ samrewritten
 screengrab
 snitch-bin
 sushi
+slurp
 steam
 spotify
 swayosd
+swappy
+system-config-printer
 telegram-desktop
 thunderbird
 tldr

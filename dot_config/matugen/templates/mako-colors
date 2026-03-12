@@ -1,0 +1,4 @@
+background-color={{colors.background.default.hex}}
+text-color={{colors.primary.default.hex}}
+border-color={{colors.outline_variant.default.hex}}
+progress-color={{colors.secondary.default.hex}}

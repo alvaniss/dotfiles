@@ -61,6 +61,10 @@ post_hook = 'vicinae theme set matugen'
 input_path = './templates/walker-colors.css'
 output_path = '~/.config/walker/themes/matugen/walker-colors.css'
 
+[templates.mako]
+input_path = './templates/mako-colors'
+output_path = '~/.config/mako/mako-colors'
+
 [templates.superfile]
 input_path = './templates/superfile-colors.toml'
 output_path = '~/.config/superfile/theme/matugen.toml'

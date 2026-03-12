@@ -110,11 +110,6 @@ tooltip label {
     color: @secondary;
 }
 
-#tray menu menuitem {
-  border-left: 1px solid @secondary;
-  border-right: 1px solid @secondary;
-}
-
 #tray menu,
 #tray .menu {
   background-color: @background;
