@@ -12,7 +12,6 @@ bleachbit
 chatterino2-bin
 chezmoi
 dropbox
-dunst
 dxvk-bin
 evince
 fcitx5
@@ -50,6 +49,7 @@ imv
 kaccounts-integration
 keepassxc
 kitty
+lact
 libadwaita
 lib32-mangohud
 lib32-mesa
@@ -60,6 +60,7 @@ lib32-vulkan-radeon
 libreoffice-fresh
 linux-headers
 localsend
+mako
 man-db
 mangohud
 mangojuice
@@ -97,7 +98,6 @@ qbittorrent
 qdiskinfo
 rofi
 samrewritten
-screengrab
 snitch-bin
 sushi
 slurp
@@ -121,6 +121,7 @@ vicinae-bin
 virtualbox
 virtualbox-host-modules-arch
 vkd3d
+vkmark
 vulkan-icd-loader
 vulkan-mesa-implicit-layers
 vulkan-radeon

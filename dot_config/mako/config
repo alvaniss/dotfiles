@@ -11,11 +11,14 @@ border-size=2
 border-radius=10
 max-icon-size=32
 font=Stack Sans Text 14px
+on-button-left=invoke-default-action
+on-button-right=dismiss
 
 [app-name=Spotify]
 invisible=1
 
 [summary~="Screenshot saved"]
+on-button-left=invoke-action edit
 height=600
 icon-location=top
 max-icon-size=350

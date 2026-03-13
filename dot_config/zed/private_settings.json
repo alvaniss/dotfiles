@@ -1,4 +1,34 @@
 {
+  "cursor_blink": false,
+  "notification_panel": {
+    "button": true
+  },
+  "bottom_dock_layout": "contained",
+  "tabs": {
+    "file_icons": false
+  },
+  "title_bar": {
+    "show_onboarding_banner": true,
+    "show_sign_in": false,
+    "show_user_menu": false,
+    "show_user_picture": false,
+    "show_menus": false
+  },
+  "soft_wrap": "editor_width",
+  "toolbar": {
+    "code_actions": false,
+    "agent_review": false,
+    "selections_menu": true,
+    "quick_actions": true,
+    "breadcrumbs": true
+  },
+  "agent": {
+    "button": false,
+    "favorite_models": [],
+    "model_parameters": [],
+    "enable_feedback": false
+  },
+  "disable_ai": true,
   "format_on_save": "off",
   "telemetry": {
     "diagnostics": false,
@@ -8,7 +38,7 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "dark",
-    "light": "One Light",
+    "light": "Matugen Light",
     "dark": "Matugen Dark",
   },
   "file_types": {

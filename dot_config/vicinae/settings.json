@@ -19,9 +19,23 @@
       "power:sleep",
       "power:suspend",
       "power:reboot",
+      "power:logout",
       "power:power-off"
    ],
    "providers": {
+      "browser-extension": {
+         "enabled": false
+      },
+      "calculator": {
+         "entrypoints": {
+            "history": {
+               "enabled": false
+            },
+            "refresh-rates": {
+               "enabled": false
+            }
+         }
+      },
       "clipboard": {
          "preferences": {
             "encryption": false,
@@ -29,6 +43,49 @@
             "ignorePasswords": true,
             "monitoring": true
          }
+      },
+      "core": {
+         "entrypoints": {
+            "documentation": {
+               "enabled": false
+            },
+            "keybind-settings": {
+               "enabled": false
+            },
+            "manage-fallback": {
+               "enabled": false
+            },
+            "oauth-token-store": {
+               "enabled": false
+            },
+            "prune-memory": {
+               "enabled": false
+            },
+            "report-bug": {
+               "enabled": false
+            },
+            "search-builtin-icons": {
+               "enabled": false
+            },
+            "settings": {
+               "enabled": true
+            },
+            "sponsor": {
+               "enabled": false
+            }
+         }
+      },
+      "developer": {
+         "enabled": false
+      },
+      "manage-shortcuts": {
+         "enabled": false
+      },
+      "raycast-compat": {
+         "enabled": false
+      },
+      "wm": {
+         "enabled": false
       }
    }
 }
