@@ -1,11 +1,11 @@
 include=/home/alvaniss/.config/mako/mako-colors
 
-sort=-time
+sort=+time
 layer=overlay
 anchor=top-right
 default-timeout=5000
 width=380
-outer-margin=20
+outer-margin=5
 padding=10
 border-size=2
 border-radius=10
