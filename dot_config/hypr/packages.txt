@@ -97,6 +97,7 @@ pyenv
 qbittorrent
 qdiskinfo
 rofi
+ufw
 samrewritten
 snitch-bin
 sushi

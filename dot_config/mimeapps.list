@@ -55,3 +55,9 @@ x-scheme-handler/discord=vesktop.desktop
 application/vnd.comicbook-rar=koreader.desktop
 inode/directory=org.gnome.Nautilus.desktop
 x-scheme-handler/aether=aether-protocol-handler.desktop
+text/javascript=dev.zed.Zed.desktop
+application/yaml=dev.zed.Zed.desktop
+
+[Added Associations]
+text/javascript=dev.zed.Zed.desktop;
+application/yaml=dev.zed.Zed.desktop;
