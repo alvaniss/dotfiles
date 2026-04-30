@@ -1,4 +1,17 @@
 {
+  "cli_default_open_behavior": "existing_window",
+  "project_panel": {
+    "dock": "left"
+  },
+  "outline_panel": {
+    "dock": "left"
+  },
+  "collaboration_panel": {
+    "dock": "left"
+  },
+  "git_panel": {
+    "dock": "left"
+  },
   "cursor_blink": false,
   "notification_panel": {
     "button": true
@@ -23,6 +36,7 @@
     "breadcrumbs": true
   },
   "agent": {
+    "dock": "right",
     "button": false,
     "favorite_models": [],
     "model_parameters": [],

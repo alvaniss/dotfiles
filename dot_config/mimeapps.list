@@ -57,6 +57,12 @@ inode/directory=org.gnome.Nautilus.desktop
 x-scheme-handler/aether=aether-protocol-handler.desktop
 text/javascript=dev.zed.Zed.desktop
 application/yaml=dev.zed.Zed.desktop
+application/x-010intel=010editor-import.desktop
+application/x-010motorola=010editor-import.desktop
+application/x-010script=010editor.desktop
+application/x-010template=010editor.desktop
+application/x-010project=010editor-project.desktop
+application/x-010workspace=010editor-project.desktop
 
 [Added Associations]
 text/javascript=dev.zed.Zed.desktop;

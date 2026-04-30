@@ -129,7 +129,7 @@ fi
 # set gtk theme
 gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'
 
-#-------Imagemagick magick 👀--------------#
+# imagemagick
 wait $!
 
 # convert and resize the current wallpaper & make it image for rofi with blur
