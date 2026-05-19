@@ -26,7 +26,7 @@ video/x-ogm+ogg=mpv.desktop
 video/x-theora+ogg=mpv.desktop
 application/ogg=mpv.desktop
 helium-browser.desktop=browser.desktop
-text/plain=nvim.desktop
+text/plain=dev.zed.Zed.desktop
 text/english=nvim.desktop
 text/x-makefile=nvim.desktop
 text/x-c++hdr=nvim.desktop
@@ -63,7 +63,9 @@ application/x-010script=010editor.desktop
 application/x-010template=010editor.desktop
 application/x-010project=010editor-project.desktop
 application/x-010workspace=010editor-project.desktop
+x-scheme-handler/discord-424004941485572097=discord-424004941485572097.desktop
 
 [Added Associations]
 text/javascript=dev.zed.Zed.desktop;
 application/yaml=dev.zed.Zed.desktop;
+text/plain=dev.zed.Zed.desktop;

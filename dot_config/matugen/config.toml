@@ -23,7 +23,6 @@ output_path = '~/.config/zed/themes/matugen.json'
 [templates.ghostty]
 input_path = './templates/ghostty-colors'
 output_path = '~/.config/ghostty/themes/matugen'
-post_hook = 'pkill -SIGUSR2 ghostty'
 
 [templates.fish]
 input_path = './templates/fish-colors.theme'
@@ -32,12 +31,10 @@ output_path = '~/.config/fish/themes/matugen.theme'
 [templates.btop]
 input_path = './templates/btop-colors.theme'
 output_path = '~/.config/btop/themes/matugen.theme'
-post_hook = 'pkill -SIGUSR2 btop'
 
 [templates.neovim]
 input_path = './templates/nvim-colors.lua'
 output_path = '~/.config/nvim/matugen.lua'
-post_hook = 'pkill -SIGUSR1 nvim'
 
 [templates.rofi]
 input_path = './templates/rofi-colors.rasi'
