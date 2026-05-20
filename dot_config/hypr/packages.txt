@@ -133,6 +133,7 @@ wine
 winetricks
 wiremix
 wl-clipboard
+wl-freeze
 woff2
 xdg-dbus-proxy
 xdg-desktop-portal

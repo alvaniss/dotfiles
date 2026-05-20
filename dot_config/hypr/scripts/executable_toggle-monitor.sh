@@ -1,7 +1,7 @@
 #!/bin/bash
 
 STATE_FILE="$HOME/.config/hypr/scripts/monitor-state"
-CONFIG_FILE="$HOME/.config/hypr/hyprland.conf"
+CONFIG_FILE="$HOME/.config/hypr/hyprland.lua"
 MONITOR="HDMI-A-1"
 
 [[ -f "$STATE_FILE" ]] || echo "on" > "$STATE_FILE"
@@ -9,13 +9,11 @@ MONITOR="HDMI-A-1"
 STATE=$(cat "$STATE_FILE")
 
 if [[ "$STATE" == "on" ]]; then
-    hyprctl keyword monitor "$MONITOR, disable"
-    sed -i "s/^monitor *= *$MONITOR,.*/monitor = $MONITOR, disable/" "$CONFIG_FILE"
+    sed -i 's/disabled = false/disabled = true/g' "$CONFIG_FILE"
     echo "off" > "$STATE_FILE"
 
 else
-    hyprctl keyword monitor "$MONITOR, 1920x1080@74.97, 0x0, auto, transform, 3"
-    sed -i "s/^monitor *= *$MONITOR,.*/monitor = $MONITOR, 1920x1080@74.97, 0x0, auto, transform, 3/" "$CONFIG_FILE"
+    sed -i 's/disabled = true/disabled = false/g' "$CONFIG_FILE"
     sleep 0.5 && awww img $HOME/.config/hypr/images/desktop-background.png -o $MONITOR -t none
     echo "on" > "$STATE_FILE"
 fi

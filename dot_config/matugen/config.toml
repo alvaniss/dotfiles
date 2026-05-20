@@ -11,9 +11,13 @@ post_hook = 'pkill waybar && waybar & disown'
 input_path = '~/.config/matugen/templates/chromium-colors.json'
 output_path = '/etc/chromium/policies/managed/policy.json'
 
+[templates.general]
+input_path = './templates/general-colors.conf'
+output_path = '~/.config/hypr/configs/colors.conf'
+
 [templates.hyprland]
 input_path = './templates/hyprland-colors.conf'
-output_path = '~/.config/hypr/configs/colors.conf'
+output_path = '~/.config/hypr/configs/colors.lua'
 post_hook = 'hyprctl reload'
 
 [templates.zed]
