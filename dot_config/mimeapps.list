@@ -1,7 +1,7 @@
 [Default Applications]
 application/pdf=org.gnome.Evince.desktop
 application/x-gnome-saved-search=org.gnome.Nautilus.desktop
-image/png=imv.desktop
+image/png=org.gnome.Loupe.desktop
 image/jpeg=imv.desktop
 image/jpg=imv.desktop
 image/gif=imv.desktop
@@ -69,3 +69,4 @@ x-scheme-handler/discord-424004941485572097=discord-424004941485572097.desktop
 text/javascript=dev.zed.Zed.desktop;
 application/yaml=dev.zed.Zed.desktop;
 text/plain=dev.zed.Zed.desktop;
+image/png=org.gnome.Loupe.desktop;

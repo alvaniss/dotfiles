@@ -1,16 +1,8 @@
-local colors = require("configs.colors")
-
 hl.config({
 	general = {
 		gaps_in = 4,
 		gaps_out = 6,
 		border_size = 2,
-
-		col = {
-			active_border = colors.outline,
-			inactive_border = colors.outline_variant,
-		},
-
 		resize_on_border = true,
 		extend_border_grab_area = 10,
 		allow_tearing = false,
@@ -27,8 +19,6 @@ hl.config({
 			enabled = true,
 			range = 12,
 			render_power = 6,
-			color = colors.shadow,
-			color_inactive = colors.shadow,
 			offset = "0 0",
 		},
 

@@ -5,6 +5,7 @@ require("configs.input")
 require("configs.looknfeel")
 require("configs.tiling")
 require("configs.windowrules")
+require("noctalia").apply_theme()
 
 hl.monitor({
 	output = "DP-2",
