@@ -5,7 +5,7 @@ hl.window_rule({
 	fullscreen = true,
 	maximize = true,
 	fullscreen_state = 0,
-	suppress_event = "fullscreen fullscreenoutput maximize",
+	suppress_event = "fullscreenoutput maximize",
 })
 
 hl.window_rule({

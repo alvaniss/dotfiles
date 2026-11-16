@@ -5,6 +5,7 @@ hl.bind("SUPER + Z", hl.dsp.exec_cmd("zeditor"))
 hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"))
 
+
 -- utility binds
 hl.bind("SUPER + SHIFT + V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"))
 hl.bind("Home", hl.dsp.exec_cmd("noctalia msg screenshot-region"))
@@ -12,6 +13,10 @@ hl.bind("page_down", hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen all"))
 hl.bind("SUPER + SHIFT + L", hl.dsp.exec_cmd("noctalia msg session lock"))
 hl.bind("SUPER + P", hl.dsp.window.float({ action = "toggle" }))
 hl.bind("SUPER + Q", hl.dsp.exec_cmd("wl-freeze -a"))
+hl.bind("mouse:275", hl.dsp.exec_cmd("~/.config/hypr/scripts/scrolling-hold.sh 14 0"))
+hl.bind("mouse:275", hl.dsp.exec_cmd("~/.config/hypr/scripts/scrolling-release.sh 14 0"), { release = true })
+hl.bind("mouse:276", hl.dsp.exec_cmd("~/.config/hypr/scripts/scrolling-hold.sh -14 0"))
+hl.bind("mouse:276", hl.dsp.exec_cmd("~/.config/hypr/scripts/scrolling-release.sh -14 0"), { release = true })
 
 -- scripts
 hl.bind("SUPER + SHIFT + J", hl.dsp.exec_cmd("~/.config/hypr/scripts/toggle-monitor.sh"))

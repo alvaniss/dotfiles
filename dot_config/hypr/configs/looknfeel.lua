@@ -18,7 +18,7 @@ hl.config({
 		shadow = {
 			enabled = true,
 			range = 12,
-			render_power = 6,
+			render_power = 4,
 			offset = "0 0",
 		},
 
