@@ -9,7 +9,7 @@ require("noctalia").apply_theme()
 
 hl.monitor({
 	output = "DP-2",
-	mode = "2560x14400@165",
+	mode = "2560x1440@165",
 	position = "1080x310",
 	scale = 1,
 })
